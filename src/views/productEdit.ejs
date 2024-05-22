@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head') %>
+</head>
+
+<body style="background-color: rgb(228, 228, 228);">
+    <%- include('partials/header') %>
+        <main class="container">
+            <div class="row mb-3">
+                <div class="col-12 col-md-8 mx-auto mt-5">
+                    <div class="card shadow">
+                        <div class="card-header">
+                            <h4 class="card-title">Editar producto</h4>
+                        </div>
+                        <div class="card-body">
+                            <form action="" class="row">
+
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="name" class="form-label">Título</label>
+                                    <input type="text" class="form-control" id="name" name="title">
+                                </div>
+                                
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="category" class="form-label">Categoría</label>
+                                    <select class="form-select" aria-label="Default select example" name="category"
+                                        id="category">
+                                        <option selected hidden>Seleccione...</option>
+                                        <option value="1"></option>
+                                        <option value="2"></option>
+                                        <option value="3"></option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="color" class="form-label">Color</label>
+                                    <select class="form-select" aria-label="Default select example" name="color"
+                                        id="color">
+                                        <option selected hidden>Seleccione...</option>
+                                        <option value="1">Blanco</option>
+                                        <option value="2">Negro</option>
+                                        <option value="3">Otros</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="price" class="form-label">Precio</label>
+                                    <input type="number" class="form-control" id="price" name="price">
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="stock" class="form-label">Stock</label>
+                                    <input type="number" class="form-control" id="stock" name="stock">
+                                </div>
+                                <div class="col-12 d-flex justify-content-center col-md-12 mb-3">
+                                    <label for="image" class="btn btn-success">Editar imagen</label>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="description" class="form-label">Descripción</label>
+                                    <textarea name="description" id="description" class="form-control"
+                                        style="resize: none;"></textarea>
+                                </div>
+                                <div class="col-12 d-flex justify-content-between gap-2 mb-3">
+                                    <label for="image" class="btn btn-primary">Guardar cambios</label>
+                                    <input type="file" name="image" id="image" hidden>
+                                    <label for="delete-image" class="btn btn-danger">Eliminar</label>
+                                    <input type="file" name="delete-image" id="delete-image" hidden>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+</body>
+
+</html>

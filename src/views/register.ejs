@@ -4,12 +4,82 @@
 
     <body style="background-color: rgb(228, 228, 228);">
         <%- include('partials/header') %>
-        <main>
+            <main class="col-12 col-md-4 mx-auto mt-5 container">
+                <!-- Pills content -->
+                <div class="tab-content card shadow p-4">
+                    <div class="">
+                        <form>
+                            <div class="text-center mb-3">
+                                <p>Inicia sesión con:</p>
+                                <button  type="button" class="btn btn-secondary btn-floating mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
 
-        </main>
-        <footer>
-            
-        </footer>
+                                <button  type="button" class="btn btn-secondary btn-floating mx-1">
+                                    <i class="fab fa-google"></i>
+                                </button>
+
+                                <button  type="button" class="btn btn-secondary btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+
+                                <button  type="button" class="btn btn-secondary btn-floating mx-1">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+
+                            <p class="text-center">O:</p>
+                            <div class="d-flex">
+                                <!-- Name input -->
+                                <div class="form-label mb-2 w-100 m-2">
+                                    <input type="text" id="name" placeholder="Nombre" class="form-control" />
+                                    <label class="form-label" for="name"></label>
+                                </div>
+
+                                <!-- Username input -->
+                                <div class="form-label mb-2 w-100 m-2">
+                                    <input type="text" id="lastName" placeholder="Apellido" class="form-control" />
+                                    <label class="form-label" for="lastName"></label>
+                                </div>
+                            </div>
+                            <!-- Email input -->
+                            <div class="form mb-2 m-2">
+                                <input type="email" id="email" placeholder="Email" class="form-control" />
+                                <label class="form-label" for="email"></label>
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-label mb-2 m-2">
+                                <input type="password" id="password" placeholder="Contraseña" class="form-control" />
+                                <label class="form-label" for="password"></label>
+                            </div>
+
+                            <!-- Repeat Password input -->
+                            <div class="form-label mb-2 m-2">
+                                <input type="password" id="password2" placeholder="Repita la contraseña" class="form-control" />
+                                <label class="form-label" for="password2"></label>
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="form-check d-flex justify-content-center mb-2">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+                                    aria-describedby="registerCheckHelpText" />
+                                <label class="form-check-label" for="registerCheck">
+                                    He leído y acepto los términos.
+                                </label>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button  type="submit" class="btn btn-primary btn-block mb-3">Iniciar sesión
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Pills content -->
+            </main>
+            <footer>
+
+            </footer>
     </body>
 
 </html>
