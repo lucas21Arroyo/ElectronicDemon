@@ -1,0 +1,19 @@
+
+    <div class="col m-2 hover-shadow" style="padding: 0;">
+        <div class="card pt-4 hover-zoom" >
+            <div class="mx-auto" style="object-fit: cover;">
+                <img src="/img/<%= product.image || 'default-image.png' %>" style="height: 200px;" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">
+                    <%= product.name %>
+                </h5>
+                <div class="d-flex justify-content-between">
+                    <strong class="fs-4">
+                        <%= product.price %>
+                    </strong>
+                    <a class="btn btn-primary btn-rounded" href="/products/details/<%= product.id %>">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>

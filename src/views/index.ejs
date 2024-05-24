@@ -2,218 +2,50 @@
 <html lang="en">
 
 <%- include('partials/head') %>
-<body style="background-color: rgb(228, 228, 228);">
-    <%- include('partials/header') %>
-    <main>
-        <div id="carouselExampleIndicators" class="carousel slide mb-2 mt-5">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://tecstore.pe/media/banner-tecstore-1430x450-huawei_1.jpg" class="d-block w-100" style="height: 500px;" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://tecstore.pe/media/TEC_Banner-Web_Categoria_ACCESORIOS.jpg" class="d-block w-100" style="height: 500px;" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://marketplace.canva.com/EAFEhUK_WdY/1/0/1600w/canva-banner-para-mercado-shops-tienda-de-celulares-moderno-negro-AWRKN423ZV0.jpg" class="d-block w-100" style="height: 500px;" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        <div class="row row-cols-1 row-cols-md-5 m-2">
-            <div class="col m-2 hover-shadow" style="padding: 0;">
-                <div class="card pt-4 hover-zoom">
-                    <div class="mx-auto" style="width: 100px; height: 240px;">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_948595-MLU74223977126_022024-O.webp"
-                            class="card-img-top" alt="...">
+
+    <body style="background-color: rgb(228, 228, 228);">
+        <%- include('partials/header') %>
+            <main>
+                <div id="carouselExampleIndicators" class="carousel slide mb-2 mt-5">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Motorola Moto E22 64GB Azul 4GB RAM</h5>
-                        <div class="d-flex justify-content-between">
-                            <strong class="fs-4">$99999</strong>
-                            <button class="btn btn-primary btn-rounded">Comprar</button>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://tecstore.pe/media/banner-tecstore-1430x450-huawei_1.jpg"
+                                class="d-block w-100" style="height: 500px;" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://tecstore.pe/media/TEC_Banner-Web_Categoria_ACCESORIOS.jpg"
+                                class="d-block w-100" style="height: 500px;" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://marketplace.canva.com/EAFEhUK_WdY/1/0/1600w/canva-banner-para-mercado-shops-tienda-de-celulares-moderno-negro-AWRKN423ZV0.jpg"
+                                class="d-block w-100" style="height: 500px;" alt="...">
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </div>
-            <div class="col m-2 hover-shadow" style="padding: 0;">
-                <div class="card pt-4 hover-zoom">
-                    <div class="mx-auto" style="width: 100px; height: 240px;">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_634900-MLU72112591138_102023-O.webp"
-                            class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Samsung Galaxy Z Flip5 8gb + 256gb Black</h5>
-                        <div class="d-flex justify-content-between">
-                            <strong class="fs-4">$99999</strong>
-                            <button class="btn btn-primary btn-rounded">Comprar</button>
-                        </div>
-                    </div>
+                <div class="row row-cols-1 row-cols-md-5 m-2 w-100">
+                    <% for(let product of products){ %>
+                        <%- include('partials/card',{product}) %>
+                            <% } %>
                 </div>
-            </div>
-            <div class="col m-2 hover-shadow" style="padding: 0;">
-                <div class="card pt-4 hover-zoom">
-                    <div class="mx-auto" style="width: 100px; height: 240px;">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_673404-MLU72741987205_112023-O.webp"
-                            class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Teléfono Celular Tcl 408 (6+64) Gravity Gray Rva</h5>
-                        <div class="d-flex justify-content-between">
-                            <strong class="fs-4">$99999</strong>
-                            <button class="btn btn-primary btn-rounded">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col m-2 hover-shadow" style="padding: 0;">
-                <div class="card pt-4 hover-zoom">
-                    <div class="mx-auto" style="width: 100px; height: 240px;">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_648883-MLU74182500303_012024-O.webp"
-                            class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Motorola Moto G23 128 GB Azul cielo 4 GB RAM</h5>
-                        <div class="d-flex justify-content-between">
-                            <strong class="fs-4">$99999</strong>
-                            <button class="btn btn-primary btn-rounded">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col m-2 hover-shadow" style="padding: 0;">
-                <div class="card pt-4 hover-zoom">
-                    <div class="mx-auto">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_823504-MLU72660358690_112023-O.webp"
-                            class="card-img-top" style="height: 240px;" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Notebook Exo Smart T38 Intel N4020</h5>
-                        <div class="d-flex justify-content-between">
-                            <strong class="fs-4">$99999</strong>
-                            <button class="btn btn-primary btn-rounded">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col m-2 hover-shadow" style="padding: 0;">
-                <div class="card pt-4 hover-zoom">
-                    <div class="mx-auto" style="width: 100px; height: 240px;">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_634900-MLU72112591138_102023-O.webp"
-                            class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Samsung Galaxy Z Flip5 8gb + 256gb Black</h5>
-                        <div class="d-flex justify-content-between">
-                            <strong class="fs-4">$99999</strong>
-                            <button class="btn btn-primary btn-rounded">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col m-2 hover-shadow" style="padding: 0;">
-                <div class="card pt-4 hover-zoom">
-                    <div class="mx-auto" style="width: 100px; height: 240px;">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_634900-MLU72112591138_102023-O.webp"
-                            class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Samsung Galaxy Z Flip5 8gb + 256gb Black</h5>
-                        <div class="d-flex justify-content-between">
-                            <strong class="fs-4">$99999</strong>
-                            <button class="btn btn-primary btn-rounded">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col m-2 hover-shadow" style="padding: 0;">
-                <div class="card pt-4 hover-zoom">
-                    <div class="mx-auto" style="width: 100px; height: 240px;">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_634900-MLU72112591138_102023-O.webp"
-                            class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Samsung Galaxy Z Flip5 8gb + 256gb Black</h5>
-                        <div class="d-flex justify-content-between">
-                            <strong class="fs-4">$99999</strong>
-                            <button class="btn btn-primary btn-rounded">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col m-2 hover-shadow" style="padding: 0;">
-                <div class="card pt-4 hover-zoom">
-                    <div class="mx-auto" style="width: 100px; height: 240px;">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_634900-MLU72112591138_102023-O.webp"
-                            class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Samsung Galaxy Z Flip5 8gb + 256gb Black</h5>
-                        <div class="d-flex justify-content-between">
-                            <strong class="fs-4">$99999</strong>
-                            <button class="btn btn-primary btn-rounded">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col m-2 hover-shadow" style="padding: 0;">
-                <div class="card pt-4 hover-zoom">
-                    <div class="mx-auto" style="width: 100px; height: 240px;">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_634900-MLU72112591138_102023-O.webp"
-                            class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Samsung Galaxy Z Flip5 8gb + 256gb Black</h5>
-                        <div class="d-flex justify-content-between">
-                            <strong class="fs-4">$99999</strong>
-                            <button class="btn btn-primary btn-rounded">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col m-2 hover-shadow" style="padding: 0;">
-                <div class="card pt-4 hover-zoom">
-                    <div class="mx-auto" style="width: 100px; height: 240px;">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_634900-MLU72112591138_102023-O.webp"
-                            class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Samsung Galaxy Z Flip5 8gb + 256gb Black</h5>
-                        <div class="d-flex justify-content-between">
-                            <strong class="fs-4">$99999</strong>
-                            <button class="btn btn-primary btn-rounded">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col m-2 hover-shadow" style="padding: 0;">
-                <div class="card pt-4 hover-zoom">
-                    <div class="mx-auto" style="width: 100px; height: 240px;">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_634900-MLU72112591138_102023-O.webp"
-                            class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Samsung Galaxy Z Flip5 8gb + 256gb Black</h5>
-                        <div class="d-flex justify-content-between">
-                            <strong class="fs-4">$99999</strong>
-                            <button class="btn btn-primary btn-rounded">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-</body>
+            </main>
+    </body>
 
 </html>

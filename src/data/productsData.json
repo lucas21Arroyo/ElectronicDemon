@@ -1,0 +1,90 @@
+[
+    {
+        "id" : 1,
+        "name" : "lorem",
+        "price" : 9999,
+        "discount" : 10,
+        "category" : "celulares",
+        "description": "Lorem ipsum dolor sit.",
+        "image" : "1(celu).webp",
+        "hex" : "",
+        "color" : "blanco"
+    },
+    {
+        "id" : 2,
+        "name" : "lorem",
+        "price" : 9999,
+        "discount" : 10,
+        "category" : "computacion",
+        "description": "Lorem ipsum dolor sit.",
+        "image" : "(computacion).webp",
+        "hex" : "",
+        "color" : "negro"
+    },
+    {
+        "id" : 3,
+        "name" : "lorem",
+        "price" : 9999,
+        "discount" : 10,
+        "category" : "tv&audio",
+        "description": "Lorem ipsum dolor sit.",
+        "image" : "(tv&audio).webp",
+        "hex" : "",
+        "color" : "blanco"
+    },
+    {
+        "id" : 4,
+        "name" : "lorem",
+        "price" : 9999,
+        "discount" : 0,
+        "category" : "celulares",
+        "description": "Lorem ipsum dolor sit.",
+        "image" : "2(celu).webp",
+        "hex" : "",
+        "color" : "blanco"
+    },
+    {
+        "id" : 5,
+        "name" : "lorem",
+        "price" : 9999,
+        "discount" : 20,
+        "category" : "celulares",
+        "description": "Lorem ipsum dolor sit.",
+        "image" : "3(celu).webp",
+        "hex" : "",
+        "color" : "blanco"
+    },
+    {
+        "id" : 6,
+        "name" : "lorem",
+        "price" : 9999,
+        "discount" : 50,
+        "category" : "computacion",
+        "description": "Lorem ipsum dolor sit.",
+        "image" : "1(computacion).webp",
+        "hex" : "",
+        "color" : "negro"
+    },
+    {
+        "id" : 7,
+        "name" : "lorem",
+        "price" : 9999,
+        "discount" : 5,
+        "category" : "celulares",
+        "description": "Lorem ipsum dolor sit.",
+        "image" : "4(celu).webp",
+        "hex" : "",
+        "color" : "blanco"
+    },
+    {
+        "id" : 8,
+        "name" : "lorem",
+        "price" : 9999,
+        "discount" : 15,
+        "category" : "celulares",
+        "description": "Lorem ipsum dolor sit.",
+        "image" : "5(celu).webp",
+        "hex" : "",
+        "color" : "blanco"
+    }
+]
