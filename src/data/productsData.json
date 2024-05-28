@@ -1,90 +1,127 @@
 [
-    {
-        "id" : 1,
-        "name" : "lorem",
-        "price" : 9999,
-        "discount" : 10,
-        "category" : "celulares",
-        "description": "Lorem ipsum dolor sit.",
-        "image" : "1(celu).webp",
-        "hex" : "",
-        "color" : "blanco"
-    },
-    {
-        "id" : 2,
-        "name" : "lorem",
-        "price" : 9999,
-        "discount" : 10,
-        "category" : "computacion",
-        "description": "Lorem ipsum dolor sit.",
-        "image" : "(computacion).webp",
-        "hex" : "",
-        "color" : "negro"
-    },
-    {
-        "id" : 3,
-        "name" : "lorem",
-        "price" : 9999,
-        "discount" : 10,
-        "category" : "tv&audio",
-        "description": "Lorem ipsum dolor sit.",
-        "image" : "(tv&audio).webp",
-        "hex" : "",
-        "color" : "blanco"
-    },
-    {
-        "id" : 4,
-        "name" : "lorem",
-        "price" : 9999,
-        "discount" : 0,
-        "category" : "celulares",
-        "description": "Lorem ipsum dolor sit.",
-        "image" : "2(celu).webp",
-        "hex" : "",
-        "color" : "blanco"
-    },
-    {
-        "id" : 5,
-        "name" : "lorem",
-        "price" : 9999,
-        "discount" : 20,
-        "category" : "celulares",
-        "description": "Lorem ipsum dolor sit.",
-        "image" : "3(celu).webp",
-        "hex" : "",
-        "color" : "blanco"
-    },
-    {
-        "id" : 6,
-        "name" : "lorem",
-        "price" : 9999,
-        "discount" : 50,
-        "category" : "computacion",
-        "description": "Lorem ipsum dolor sit.",
-        "image" : "1(computacion).webp",
-        "hex" : "",
-        "color" : "negro"
-    },
-    {
-        "id" : 7,
-        "name" : "lorem",
-        "price" : 9999,
-        "discount" : 5,
-        "category" : "celulares",
-        "description": "Lorem ipsum dolor sit.",
-        "image" : "4(celu).webp",
-        "hex" : "",
-        "color" : "blanco"
-    },
-    {
-        "id" : 8,
-        "name" : "lorem",
-        "price" : 9999,
-        "discount" : 15,
-        "category" : "celulares",
-        "description": "Lorem ipsum dolor sit.",
-        "image" : "5(celu).webp",
-        "hex" : "",
-        "color" : "blanco"
-    }
+   {
+      "id": 1,
+      "name": "lorem",
+      "price": 9999,
+      "discount": 10,
+      "category": "celulares",
+      "description": "Lorem ipsum dolor sit.",
+      "image": "1(celu).webp",
+      "images": [],
+      "color": {
+         "hex": "#fafafa",
+         "text": "blanco"
+      },
+      "stock": 25
+   },
+   {
+      "id": 2,
+      "name": "Notebook Exo Smart R33",
+      "price": 383999,
+      "discount": 10,
+      "category": "computacion",
+      "description": "La Notebook EXO Smart R33 en color gris es la compañera perfecta para tus tareas diarias y entretenimiento. Con su pantalla de 14\" y resolución HD de 1366x768px, disfrutarás de imágenes nítidas y claras en todo momento. Su procesador Intel Celeron N4020 de dos núcleos te brinda un rendimiento eficiente y rápido, mientras que sus 4GB de memoria RAM DDR4 aseguran una multitarea fluida.",
+      "image": "image-1716929553497-120281890.webp",
+      "images": [
+         "images-1716929223053-102145005.webp",
+         "images-1716929223053-146320017.webp",
+         "images-1716929223053-134014739.webp",
+         "images-1716929223054-197802330.webp"
+      ],
+      "color": {
+         "text": "gris",
+         "hex": "#d9d9d9"
+      },
+      "stock": 17
+   },
+   {
+      "id": 3,
+      "name": "lorem",
+      "price": 9999,
+      "discount": 10,
+      "category": "tv&audio",
+      "description": "Lorem ipsum dolor sit.",
+      "image": "(tv&audio).webp",
+      "images": [],
+      "color": {
+         "hex": "#1a1a1a",
+         "text": "negro"
+      },
+      "stock": 12
+   },
+   {
+      "id": 4,
+      "name": "lorem",
+      "price": 9999,
+      "discount": 0,
+      "category": "celulares",
+      "description": "Lorem ipsum dolor sit.",
+      "image": "2(celu).webp",
+      "images": [],
+      "color": {
+         "hex": "#1a1a1a",
+         "text": "negro"
+      },
+      "stock": 11
+   },
+   {
+      "id": 5,
+      "name": "lorem",
+      "price": 9999,
+      "discount": 20,
+      "category": "celulares",
+      "description": "Lorem ipsum dolor sit.",
+      "image": "3(celu).webp",
+      "images": [],
+      "color": {
+         "hex": "#1a1a1a",
+         "text": "negro"
+      },
+      "stock": 22
+   },
+   {
+      "id": 6,
+      "name": "lorem",
+      "price": 9999,
+      "discount": 50,
+      "category": "computacion",
+      "description": "Lorem ipsum dolor sit.",
+      "image": "1(computacion).webp",
+      "images": [],
+      "color": {
+         "hex": "#1a1a1a",
+         "text": "negro"
+      },
+      "stock": 23
+   },
+   {
+      "id": 7,
+      "name": "lorem",
+      "price": 9999,
+      "discount": 5,
+      "category": "celulares",
+      "description": "Lorem ipsum dolor sit.",
+      "image": "4(celu).webp",
+      "images": [],
+      "color": {
+         "hex": "#1a1a1a",
+         "text": "negro"
+      },
+      "stock": 16
+   },
+   {
+      "id": 8,
+      "name": "lorem",
+      "price": 9999,
+      "discount": 15,
+      "category": "celulares",
+      "description": "Lorem ipsum dolor sit.",
+      "image": "5(celu).webp",
+      "images": [],
+      "color": {
+         "hex": "#1a1a1a",
+         "text": "negro"
+      },
+      "stock": 12
+   }
 ]

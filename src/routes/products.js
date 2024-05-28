@@ -1,11 +1,18 @@
 const express = require('express');
-const productsController = require('../controller/productsController')
+const productsController = require('../controller/productsController');
+const { upload } = require('../middleware/upload');
 const router = express.Router();
 
 /* /produtcs */
 router.get('/cart', productsController.cart);
-router.get('/details', productsController.details);
+router.get('/details/:id', productsController.details);
 router.get('/add', productsController.add);
-router.get('/edit', productsController.edit);
+
+/* Edit */
+router.get('/edit/:id', productsController.edit);
+router.put('/edit/:id', upload.fields([
+    { name: "image", maxCount: 1 },
+    { name: "images" },
+]), productsController.modify);
 
 module.exports = router;
