@@ -8,13 +8,16 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const controller = {
 
   cart: (req, res) => {
-    return res.render('cart');
+    return res.render('cart',{
+      products
+    });
   },
 
   details: (req, res) => {
     const product = products.find(product => product.id === +req.params.id)
     return res.render('details', {
-      product
+      product,
+      products
     });
   },
   add: (req, res) => {
@@ -38,7 +41,7 @@ const controller = {
         ) {
           imagesRemember = [...product.images, ...newImages];
         }
-        if (req.files?.images?.length) {
+        if (req.files?.image?.length) {
           const pathFileImgPrimary = path.join(__dirname,`../../public/img/${product.image}`);
           const existFile = fs.existsSync(pathFileImgPrimary);
           existFile && fs.unlinkSync(pathFileImgPrimary)
@@ -78,6 +81,25 @@ const controller = {
     fs.writeFileSync(productsFilePath, JSON.stringify(productUpdate, null, 3), 'utf-8');
 
     return res.redirect('/');
+  },
+  destroy: (req,res) =>{
+    const productModify = products.filter((product) =>{
+      if (product.id === +req.params.id) {
+        if (fs.existsSync(`./public/img/${product.image}`)) {
+          fs.unlinkSync(`./public/img/${product.image}`);
+        }
+        product.images.forEach(image => {
+          if (fs.existsSync(`./public/img/${image}`)) {
+            fs.unlinkSync(`./public/img/${image}`);
+          }
+        })
+        return false
+      }
+      return true
+    });
+    fs.writeFileSync(productsFilePath, JSON.stringify(productModify,null, 3), 'utf-8');
+
+    return res.redirect('/')
   }
 
 };

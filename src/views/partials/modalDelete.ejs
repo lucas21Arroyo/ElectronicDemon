@@ -1,0 +1,20 @@
+<!-- Modal -->
+  <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="modalDelete<%= id %>Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalDelete">Advertencia</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="/products/delete/<%= id %>?_method=DELETE" method="POST" class="row" enctype="multipart/form-data">
+                <h4 class="my-3 text-center">¿Estas seguro de eliminar el producto <span class="text-warning"><%= name %></span>?</h4>
+                <div class="d-flex justify-content-end gap-2">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+               <button class="btn btn-danger" type="submit">Eliminar</button>
+            </div>
+                </form>
+        </div>
+      </div>
+    </div>
+  </div>

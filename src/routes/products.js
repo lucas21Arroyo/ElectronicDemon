@@ -4,15 +4,22 @@ const { upload } = require('../middleware/upload');
 const router = express.Router();
 
 /* /produtcs */
-router.get('/cart', productsController.cart);
-router.get('/details/:id', productsController.details);
-router.get('/add', productsController.add);
+router
+    .get('/cart', productsController.cart)
+    .get('/details/:id', productsController.details)
+    .get('/add', productsController.add)
 
 /* Edit */
-router.get('/edit/:id', productsController.edit);
-router.put('/edit/:id', upload.fields([
-    { name: "image", maxCount: 1 },
-    { name: "images" },
-]), productsController.modify);
+router
+    .get('/edit/:id', productsController.edit)
+    .put('/edit/:id', upload.fields([
+        { name: "image", maxCount: 1 },
+        { name: "images" },
+    ]), productsController.modify);
+
+/* Delete */
+
+router
+    .delete('/delete/:id', productsController.destroy)
 
 module.exports = router;

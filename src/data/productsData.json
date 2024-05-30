@@ -1,16 +1,20 @@
 [
    {
       "id": 1,
-      "name": "lorem",
-      "price": 9999,
+      "name": "Samsung Galaxy A04",
+      "price": 259999,
       "discount": 10,
       "category": "celulares",
-      "description": "Lorem ipsum dolor sit.",
-      "image": "1(celu).webp",
-      "images": [],
+      "description": "Doble cámara y más detalles\r\nSus 2 cámaras traseras de 50 Mpx/2 Mpx te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo.\r\n\r\nAdemás, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.",
+      "image": "image-1717093991000-336710935.webp",
+      "images": [
+         "images-1717098502546-317810127.webp",
+         "images-1717098560811-990297330.webp",
+         "images-1717098560812-269614079.webp"
+      ],
       "color": {
-         "hex": "#fafafa",
-         "text": "blanco"
+         "text": "negro",
+         "hex": "#060606"
       },
       "stock": 25
    },
